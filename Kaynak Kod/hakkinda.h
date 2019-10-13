@@ -23,6 +23,7 @@ __published:
         TLabel *Label2;
         TLabel *Label3;
         void __fastcall OKButtonClick(TObject *Sender);
+        void __fastcall OnShow(TObject *Sender);
 private:
 public:
 	virtual __fastcall TAboutBox(TComponent* AOwner);

@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 204
-  Top = 113
+  Left = 270
+  Top = 51
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'Grup19 :: Proje 1'
-  ClientHeight = 424
-  ClientWidth = 473
+  Caption = 'Grup19 :: Proje 2'
+  ClientHeight = 575
+  ClientWidth = 471
   Color = clSilver
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -5079,7 +5079,7 @@ object Form1: TForm1
   TextHeight = 13
   object lblHata: TLabel
     Left = 16
-    Top = 112
+    Top = 272
     Width = 8
     Height = 16
     Font.Charset = TURKISH_CHARSET
@@ -5091,7 +5091,7 @@ object Form1: TForm1
   end
   object lblHata2: TLabel
     Left = 16
-    Top = 392
+    Top = 552
     Width = 8
     Height = 16
     Font.Charset = TURKISH_CHARSET
@@ -5101,17 +5101,9 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
-  object lblRow: TLabel
-    Left = 440
-    Top = 328
-    Width = 6
-    Height = 13
-    Caption = '1'
-    Visible = False
-  end
   object ekle: TButton
     Left = 408
-    Top = 150
+    Top = 310
     Width = 49
     Height = 33
     Cursor = crUpArrow
@@ -5120,35 +5112,35 @@ object Form1: TForm1
     Default = True
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 2
+    TabOrder = 4
     OnClick = ekleClick
   end
   object GroupBox1: TGroupBox
     Left = 16
     Top = 24
-    Width = 385
-    Height = 89
-    Caption = 'Kaynak Levha'
+    Width = 393
+    Height = 249
+    Caption = 'Kaynak Levhalar'
     TabOrder = 0
     object lblKac: TLabel
       Left = 40
-      Top = 32
+      Top = 24
       Width = 43
       Height = 13
       Alignment = taCenter
       Caption = 'Ka'#231' tane'
     end
     object lblBoy: TLabel
-      Left = 264
-      Top = 32
+      Left = 232
+      Top = 24
       Width = 18
       Height = 13
       Alignment = taCenter
       Caption = 'Boy'
     end
     object lblEn: TLabel
-      Left = 152
-      Top = 32
+      Left = 144
+      Top = 24
       Width = 13
       Height = 13
       Alignment = taCenter
@@ -5156,7 +5148,7 @@ object Form1: TForm1
     end
     object txtTane: TEdit
       Left = 40
-      Top = 48
+      Top = 40
       Width = 89
       Height = 22
       Color = clMenuHighlight
@@ -5169,9 +5161,9 @@ object Form1: TForm1
       TabOrder = 0
     end
     object txtBoy: TEdit
-      Left = 264
-      Top = 48
-      Width = 89
+      Left = 232
+      Top = 40
+      Width = 81
       Height = 22
       Color = clMenuHighlight
       Font.Charset = TURKISH_CHARSET
@@ -5183,9 +5175,9 @@ object Form1: TForm1
       TabOrder = 2
     end
     object txtEn: TEdit
-      Left = 152
-      Top = 48
-      Width = 89
+      Left = 144
+      Top = 40
+      Width = 81
       Height = 22
       Color = clMenuHighlight
       Font.Charset = TURKISH_CHARSET
@@ -5196,10 +5188,41 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 1
     end
+    object StringGrid2: TStringGrid
+      Left = 40
+      Top = 80
+      Width = 273
+      Height = 137
+      Color = clMedGray
+      ColCount = 3
+      FixedCols = 0
+      RowCount = 50
+      Font.Charset = TURKISH_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine]
+      ParentFont = False
+      TabOrder = 3
+      ColWidths = (
+        64
+        64
+        64)
+    end
+    object sifirla2: TButton
+      Left = 232
+      Top = 216
+      Width = 81
+      Height = 25
+      Caption = 'S'#305'f'#305'rla'
+      TabOrder = 4
+      OnClick = sifirla2Click
+    end
   end
   object GroupBox2: TGroupBox
     Left = 16
-    Top = 144
+    Top = 304
     Width = 393
     Height = 249
     Caption = 'Kesilecek Levhalar'
@@ -5285,23 +5308,7 @@ object Form1: TForm1
       Font.Style = []
       Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine]
       ParentFont = False
-      TabOrder = 0
-    end
-    object ComboBox1: TComboBox
-      Left = 208
-      Top = 40
-      Width = 105
-      Height = 22
-      Style = csDropDownList
-      Color = clMenuHighlight
-      Font.Charset = TURKISH_CHARSET
-      Font.Color = clWhite
-      Font.Height = -12
-      Font.Name = 'Verdana'
-      Font.Style = []
-      ItemHeight = 14
-      ParentFont = False
-      TabOrder = 4
+      TabOrder = 5
     end
     object txtTane2: TEdit
       Left = 24
@@ -5315,7 +5322,7 @@ object Form1: TForm1
       Font.Name = 'Verdana'
       Font.Style = []
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 0
     end
     object txtEn2: TEdit
       Left = 88
@@ -5329,7 +5336,7 @@ object Form1: TForm1
       Font.Name = 'Verdana'
       Font.Style = []
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 1
     end
     object txtBoy2: TEdit
       Left = 144
@@ -5343,7 +5350,7 @@ object Form1: TForm1
       Font.Name = 'Verdana'
       Font.Style = []
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
     end
     object sifirla: TButton
       Left = 232
@@ -5368,12 +5375,30 @@ object Form1: TForm1
       Font.Style = []
       ItemHeight = 14
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 4
+    end
+    object chk: TCheckBox
+      Left = 208
+      Top = 40
+      Width = 105
+      Height = 20
+      Caption = 'D'#246'nd'#252'r'#252'lemez'
+      Color = clMenuHighlight
+      Ctl3D = True
+      Font.Charset = TURKISH_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentColor = False
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 3
     end
   end
   object kes: TButton
     Left = 408
-    Top = 182
+    Top = 240
     Width = 49
     Height = 33
     Cursor = crHandPoint
@@ -5381,13 +5406,31 @@ object Form1: TForm1
     Caption = '&Kes'
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 3
+    TabOrder = 2
     OnClick = kesClick
+  end
+  object ekle2: TButton
+    Left = 408
+    Top = 30
+    Width = 49
+    Height = 35
+    Cursor = crUpArrow
+    Hint = 'Kesilecek Levha Ekle'
+    Caption = 'E&kle'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = ekle2Click
   end
   object MainMenu1: TMainMenu
     Left = 176
     object Ayarlar: TMenuItem
       Caption = 'Ayarlar'
+      object dosyaac: TMenuItem
+        Caption = 'Dosya A'#231
+        ShortCut = 119
+        OnClick = dosyaacClick
+      end
       object Cikis: TMenuItem
         Caption = #199#305'k'#305#351
         ShortCut = 123
@@ -5398,8 +5441,13 @@ object Form1: TForm1
       Caption = 'Yard'#305'm'
       object Hakkinda: TMenuItem
         Caption = 'Hakk'#305'nda'
-        ShortCut = 112
+        ShortCut = 113
         OnClick = HakkindaClick
+      end
+      object Yardm1: TMenuItem
+        Caption = 'Yard'#305'm'
+        ShortCut = 112
+        OnClick = Yardm1Click
       end
     end
     object Dil: TMenuItem
@@ -5415,5 +5463,8 @@ object Form1: TForm1
         OnClick = TurkceClick
       end
     end
+  end
+  object od: TOpenDialog
+    Left = 144
   end
 end

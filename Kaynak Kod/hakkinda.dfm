@@ -1,6 +1,6 @@
 object AboutBox: TAboutBox
-  Left = 355
-  Top = 378
+  Left = 349
+  Top = 222
   BorderIcons = []
   BorderStyle = bsDialog
   Caption = 'Hakk'#305'nda'
@@ -14,6 +14,7 @@ object AboutBox: TAboutBox
   Font.Style = []
   OldCreateOrder = True
   Position = poScreenCenter
+  OnShow = OnShow
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -74,7 +75,7 @@ object AboutBox: TAboutBox
       Width = 127
       Height = 16
       Alignment = taCenter
-      Caption = '1. Proje - Grup 19'
+      Caption = '2. Proje - Grup 19'
       Font.Charset = TURKISH_CHARSET
       Font.Color = clWindowText
       Font.Height = -13

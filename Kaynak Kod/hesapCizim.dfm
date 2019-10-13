@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 192
-  Top = 106
+  Left = 189
+  Top = 104
   Width = 699
   Height = 602
   BorderWidth = 1
@@ -5082,7 +5082,7 @@ object Form2: TForm2
   TextHeight = 13
   object lblHata: TLabel
     Left = 16
-    Top = 400
+    Top = 352
     Width = 8
     Height = 16
     Font.Charset = TURKISH_CHARSET
@@ -5092,23 +5092,31 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
-  object lblKac: TLabel
-    Left = 624
-    Top = 520
-    Width = 6
-    Height = 13
-    Caption = '0'
-    Visible = False
+  object clipBoard: TScrollBox
+    Left = 264
+    Top = 328
+    Width = 150
+    Height = 150
+    BevelInner = bvLowered
+    BorderStyle = bsNone
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
   end
-  object lblKesilmis: TLabel
-    Left = 16
-    Top = 536
-    Width = 3
-    Height = 13
-    Visible = False
+  object kaynakAlani: TScrollBox
+    Left = 168
+    Top = 88
+    Width = 153
+    Height = 113
+    BevelInner = bvLowered
+    BorderStyle = bsNone
+    Color = clMedGray
+    ParentColor = False
+    TabOrder = 1
   end
   object MainMenu1: TMainMenu
     Left = 288
+    Top = 1
     object islem: TMenuItem
       Caption = #304#351'lem'
       object sk: TMenuItem
@@ -5122,5 +5130,18 @@ object Form2: TForm2
     DefaultExt = 'txt'
     FileName = '1'
     Left = 320
+    Top = 1
+  end
+  object popUpMenu: TPopupMenu
+    Left = 352
+    Top = 1
+    object kes: TMenuItem
+      Caption = 'Kes'
+      OnClick = kesClick
+    end
+    object cevir: TMenuItem
+      Caption = #199'evir'
+      OnClick = cevirClick
+    end
   end
 end

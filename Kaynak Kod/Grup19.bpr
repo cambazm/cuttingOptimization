@@ -5,13 +5,13 @@
     <VERSION value="BCB.06.00"/>
     <PROJECT value="Grup19.exe"/>
     <OBJFILES value="Grup19.obj veriGirisi.obj hesapCizim.obj hakkinda.obj"/>
-    <RESFILES value="grup19.res"/>
+    <RESFILES value="&quot;..\Kaynak Kod\grup19.res&quot;"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) veriGirisi.dfm hesapCizim.dfm hakkinda.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value=""/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
     <SPARELIBS value="vcl.lib rtl.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
       vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
@@ -22,21 +22,21 @@
       indy.bpi bcb2kaxserver.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
-    <PATHRC value=".;"/>
+    <PATHRC value=".;&quot;..\Kaynak Kod&quot;;&quot;..\Kaynak Kod&quot;"/>
     <PATHASM value=".;"/>
     <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
     <USERDEFINES value="_DEBUG"/>
-    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <SYSDEFINES value="NO_STRICT"/>
     <MAINSOURCE value="Grup19.cpp"/>
-    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects\mehmet&quot;;..\bp1_21.12;..;bp1_21.12;$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects\mehmet&quot;;..\bp1_21.12;..;bp1_21.12;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <INCLUDEPATH value="&quot;..\Kaynak Kod&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects\mehmet&quot;;..\bp1_21.12;..;bp1_21.12;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;..\Kaynak Kod&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects\mehmet&quot;;..\bp1_21.12;..;bp1_21.12;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+    <IDLCFLAGS value="-I&quot;..\Kaynak Kod&quot; -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
       -I&quot;C:\Program Files\Borland\CBuilder6\Projects\mehmet&quot; -I..\bp1_21.12 -I.. 
       -Ibp1_21.12 -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG 
       -boa"/>
@@ -49,9 +49,9 @@
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
-    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
-    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
     <OTHERFILES value=""/>
   </LINKER>
   <FILELIST>
@@ -59,7 +59,7 @@
       <FILE FILENAME="veriGirisi.cpp" FORMNAME="Form1" UNITNAME="veriGirisi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="hesapCizim.cpp" FORMNAME="Form2" UNITNAME="hesapCizim" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="hakkinda.cpp" FORMNAME="AboutBox" UNITNAME="hakkinda" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="grup19.rc" FORMNAME="" UNITNAME="grup19.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Kaynak Kod\grup19.rc" FORMNAME="" UNITNAME="grup19.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
